@@ -33,7 +33,7 @@ export default function Hero() {
       {/* Particles Background */}
       <div className="absolute inset-0">
         <ClientOnly>
-          <Particles quantity={80} ease={30} />
+          <Particles quantity={80} />
         </ClientOnly>
       </div>
 

@@ -10,6 +10,3 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     </NextThemeProvider>
   );
 }
-
-// Re-export useTheme from next-themes
-export { useTheme } from 'next-themes';

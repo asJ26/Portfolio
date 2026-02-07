@@ -13,15 +13,11 @@ interface Circle {
 interface ParticlesProps {
   className?: string;
   quantity?: number;
-  ease?: number;
-  refresh?: boolean;
 }
 
 export const Particles: React.FC<ParticlesProps> = ({
   className = "",
   quantity = 50,
-  ease = 50,
-  refresh = false,
 }) => {
   const [mounted, setMounted] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -189,7 +185,7 @@ export const Particles: React.FC<ParticlesProps> = ({
         cancelAnimationFrame(animationFrame.current);
       }
     };
-  }, [mounted, quantity, ease, resolvedTheme, refresh]);
+  }, [mounted, quantity, resolvedTheme]);
 
   if (!mounted) return null;
 

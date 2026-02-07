@@ -11,15 +11,10 @@ export default function CursorGlow() {
   }, []);
 
   useEffect(() => {
-    let rafId: number;
     let lastX = 0;
     let lastY = 0;
 
     const handleMouseMove = (e: MouseEvent) => {
-      if (rafId) {
-        cancelAnimationFrame(rafId);
-      }
-
       if (Math.abs(e.clientX - lastX) > 1 || Math.abs(e.clientY - lastY) > 1) {
         lastX = e.clientX;
         lastY = e.clientY;
@@ -30,9 +25,6 @@ export default function CursorGlow() {
     document.addEventListener('mousemove', handleMouseMove, { passive: true });
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
-      if (rafId) {
-        cancelAnimationFrame(rafId);
-      }
     };
   }, [updateCursorPosition]);
 
