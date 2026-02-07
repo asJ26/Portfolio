@@ -1,10 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
+import { BentoGrid, BentoGridItem } from "../ui/BentoGrid";
 import { projects } from "../../constants/projects";
 import Image from "next/image";
-import { ButtonLitLink } from '../ui/button-lit';
+import { ButtonLitLink } from '../ui/ButtonLit';
 
 export default function Projects() {
   return (

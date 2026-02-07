@@ -1,10 +1,10 @@
 "use client";
 
-import { TypewriterEffect } from "../ui/typewriter-effect";
+import { TypewriterEffect } from "../ui/TypewriterEffect";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaMediumM } from "react-icons/fa";
-import { ButtonLitLink } from "../ui/button-lit";
-import { Particles } from "../ui/particles";
+import { ButtonLitLink } from "../ui/ButtonLit";
+import { Particles } from "../ui/Particles";
 import ClientOnly from "../ClientOnly";
 
 export default function Hero() {

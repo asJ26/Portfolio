@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence, useMotionValue, useMotionTemplate } from "framer-motion";
 import { cn } from "../../utils/cn";
-import { ButtonLitLink } from "./button-lit";
+import { ButtonLitLink } from "./ButtonLit";
 
 interface ExpandableCardProps {
   title: string;

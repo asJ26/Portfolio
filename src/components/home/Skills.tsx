@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FloatingSkill } from '../ui/floating-skill';
+import { FloatingSkill } from '../ui/FloatingSkill';
 import { 
   SiPython, SiJavascript, SiTypescript, SiGo,
   SiHtml5, SiCss3, SiTailwindcss, SiJquery, 

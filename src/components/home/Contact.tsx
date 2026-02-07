@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 import { cn } from "../../utils/cn";
 import { HiOutlineMail } from "react-icons/hi";
 import { FiPhone } from "react-icons/fi";
-import { ButtonLitLink } from '../ui/button-lit';
-import { CardSpotlight } from '../ui/card-spotlight';
+import { ButtonLitLink } from '../ui/ButtonLit';
+import { CardSpotlight } from '../ui/CardSpotlight';
 
 export default function Contact() {
   return (

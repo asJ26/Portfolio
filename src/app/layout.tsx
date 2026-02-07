@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/context/ThemeContext";
-import CursorGlow from "@/components/ui/CursorGlow";
-import NavbarMenu from "@/components/ui/navbar-menu";
+import CursorGlow from "@/components/layout/CursorGlow";
+import NavbarMenu from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 const inter = Inter({ subsets: ["latin"] });

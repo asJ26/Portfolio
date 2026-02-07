@@ -2,8 +2,8 @@ import type { FC, MouseEvent, ReactNode } from 'react';
 import { useState } from 'react';
 import { cn } from "@/utils/cn";
 import { BsGithub } from "react-icons/bs";
-import { Card3D } from "./card-3d";
-import { ButtonLitLink } from "./button-lit";
+import { Card3D } from "./Card3D";
+import { ButtonLitLink } from "./ButtonLit";
 import { motion, AnimatePresence, HTMLMotionProps } from "framer-motion";
 
 interface BentoGridProps {

@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { HoverExpandableCard } from '../ui/hover-expandable-card';
+import { HoverExpandableCard } from '../ui/HoverExpandableCard';
 
 const certifications = [
   {
