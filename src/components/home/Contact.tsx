@@ -1,11 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { cn } from "../../utils/cn";
+import { cn } from "@/utils/cn";
 import { HiOutlineMail } from "react-icons/hi";
 import { FiPhone } from "react-icons/fi";
-import { ButtonLitLink } from '../ui/ButtonLit';
-import { CardSpotlight } from '../ui/CardSpotlight';
+import { ButtonLitLink } from '@/components/ui/ButtonLit';
+import { CardSpotlight } from '@/components/ui/CardSpotlight';
+import { CONTACT_INFO } from '@/constants/contact';
 
 export default function Contact() {
   return (
@@ -50,12 +51,12 @@ export default function Contact() {
                     Drop me a line at
                   </h3>
                   <p className="text-neutral-600 dark:text-white/80">
-                    xyz@gmail.com
+                    {CONTACT_INFO.email}
                   </p>
                 </div>
 
                 <ButtonLitLink
-                  href="mailto:akhileshjadhav26@gmail.com"
+                  href={`mailto:${CONTACT_INFO.email}`}
                   className="mt-4"
                 >
                   Mail Me →
@@ -81,12 +82,12 @@ export default function Contact() {
                     Call me at
                   </h3>
                   <p className="text-neutral-600 dark:text-white/80">
-                    +1 xxx-xxx-xxxx
+                    {CONTACT_INFO.phone}
                   </p>
                 </div>
 
                 <ButtonLitLink
-                  href="tel:+16809109825"
+                  href={CONTACT_INFO.phoneHref}
                   className="mt-4"
                 >
                   Call Me →

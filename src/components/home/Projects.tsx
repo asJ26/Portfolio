@@ -1,10 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { BentoGrid, BentoGridItem } from "../ui/BentoGrid";
-import { projects } from "../../constants/projects";
+import { BentoGrid, BentoGridItem } from "@/components/ui/BentoGrid";
+import { projects } from "@/constants/projects";
 import Image from "next/image";
-import { ButtonLitLink } from '../ui/ButtonLit';
+import { ButtonLitLink } from "@/components/ui/ButtonLit";
+import { SOCIAL_LINKS } from "@/constants/contact";
 
 export default function Projects() {
   return (
@@ -68,7 +69,7 @@ export default function Projects() {
           className="flex justify-center mt-6 sm:mt-8 lg:mt-16"
         >
           <ButtonLitLink
-            href="https://github.com/asJ26"
+            href={SOCIAL_LINKS.github}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2"

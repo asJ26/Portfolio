@@ -2,7 +2,7 @@
 
 import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
 import React, { MouseEvent as ReactMouseEvent } from "react";
-import { cn } from "../../utils/cn";
+import { cn } from "@/utils/cn";
 
 export const CardSpotlight = ({
   children,

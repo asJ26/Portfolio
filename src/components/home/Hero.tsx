@@ -1,11 +1,12 @@
 "use client";
 
-import { TypewriterEffect } from "../ui/TypewriterEffect";
+import { TypewriterEffect } from "@/components/ui/TypewriterEffect";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaMediumM } from "react-icons/fa";
-import { ButtonLitLink } from "../ui/ButtonLit";
-import { Particles } from "../ui/Particles";
-import ClientOnly from "../ClientOnly";
+import { ButtonLitLink } from "@/components/ui/ButtonLit";
+import { Particles } from "@/components/ui/Particles";
+import ClientOnly from "@/components/ui/ClientOnly";
+import { SOCIAL_LINKS, PERSONAL_INFO } from "@/constants/contact";
 
 export default function Hero() {
   const words = [
@@ -49,12 +50,12 @@ export default function Hero() {
           </div>
           
           <p className="text-neutral-600 dark:text-white/80 max-w-2xl mx-auto text-center mt-6">
-            In today's interconnected landscape, I transform complex challenges into elegant solutions through the artistry of full-stack development. Orchestrating microservices is my signature, ensuring your systems don't just function—they thrive across clouds with seamless precision.
+            {PERSONAL_INFO.tagline}
           </p>
 
           <div className="flex gap-4 mt-8">
             <a
-              href="https://github.com/asJ26"
+              href={SOCIAL_LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white dark:bg-neutral-900 rounded-full hover:scale-110 transition-transform duration-200"
@@ -62,7 +63,7 @@ export default function Hero() {
               <BsGithub className="w-6 h-6" />
             </a>
             <a
-              href="https://www.linkedin.com/in/akhilesh-s-jadhav/"
+              href={SOCIAL_LINKS.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white dark:bg-neutral-900 rounded-full hover:scale-110 transition-transform duration-200"
@@ -70,7 +71,7 @@ export default function Hero() {
               <BsLinkedin className="w-6 h-6" />
             </a>
             <a
-              href="https://medium.com/@akhileshjadhav26"
+              href={SOCIAL_LINKS.medium}
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white dark:bg-neutral-900 rounded-full hover:scale-110 transition-transform duration-200"

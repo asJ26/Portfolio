@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import type { Variants } from 'framer-motion';
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { cn } from "../../utils/cn";
+import { cn } from "@/utils/cn";
 import { useTheme } from "next-themes";
 import { FiSun, FiMoon, FiMenu, FiX } from "react-icons/fi";
 
