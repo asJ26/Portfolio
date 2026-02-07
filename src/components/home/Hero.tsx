@@ -3,7 +3,6 @@
 import { TypewriterEffect } from "../ui/typewriter-effect";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaMediumM } from "react-icons/fa";
-import { HiOutlineDownload } from "react-icons/hi";
 import { ButtonLitLink } from "../ui/button-lit";
 import { Particles } from "../ui/particles";
 import ClientOnly from "../ClientOnly";
@@ -86,31 +85,7 @@ export default function Hero() {
             >
               View Projects
             </ButtonLitLink>
-
-{/*             <ButtonLitLink
-              href="/Akhilesh_Jadhav_Resume.pdf"
-              className="flex items-center whitespace-nowrap"
-              download
-            >
-              <span className="inline-block">Resume</span>
-              <HiOutlineDownload className="w-5 h-5 ml-2 inline-block" />
-            </ButtonLitLink> */}
           </div>
-
-{/*           <div className="grid grid-cols-3 gap-12 mt-20 text-center">
-            <div>
-              <h2 className="text-3xl font-bold mb-2 text-neutral-900 dark:text-purple-500">20+</h2>
-              <p className="text-sm text-neutral-600 dark:text-white/80">Data Pipelines</p>
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold mb-2 text-neutral-900 dark:text-purple-500">100TB+</h2>
-              <p className="text-sm text-neutral-600 dark:text-white/80">Data Processed</p>
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold mb-2 text-neutral-900 dark:text-purple-500">99.9%</h2>
-              <p className="text-sm text-neutral-600 dark:text-white/80">Pipeline Reliability</p>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>
